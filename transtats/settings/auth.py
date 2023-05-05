@@ -34,6 +34,7 @@ ADMINS = (
     ('transtats', 'admin@transtats.org'),
 )
 
+USE_X_FORWARDED_HOST = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 ADMIN_INITIAL_PASSWORD = app_config_vars('ADMIN_PASSWORD')
 
